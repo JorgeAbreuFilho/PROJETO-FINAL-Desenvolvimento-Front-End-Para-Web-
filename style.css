@@ -1,0 +1,109 @@
+/* Tira as margens padrão e define a fonte de tudo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Faz a página ocupar a tela toda e organiza de cima pra baixo */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #333333;
+}
+
+/* Cabeçalho azul escuro com título branco no centro */
+header {
+  background-color: #003f7f;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* Rodapé azul escuro igual ao cabeçalho */
+footer {
+  background-color: #003f7f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* Coloca o menu e o conteúdo lado a lado */
+.container {
+  display: flex;
+  flex: 1;
+}
+
+/* Menu lateral azul clarinho */
+nav {
+  background-color: #e6f2ff;
+  width: 245px;
+  padding: 20px;
+}
+
+/* Espaço entre os itens do menu */
+nav li {
+  margin-bottom: 15px;
+  margin-left: 18px;
+}
+
+/* Links do menu em azul e sem sublinhado */
+nav a {
+  color: #0057a8;
+  text-decoration: none;
+}
+
+/* Muda a cor e sublinha quando passa o mouse no link */
+nav a:hover {
+  color: #002b5c;
+  text-decoration: underline;
+}
+
+/* Área do conteúdo com espaço nas bordas */
+main {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Título do conteúdo em azul bem escuro */
+main h2 {
+  color: #002b5c;
+  margin-bottom: 15px;
+}
+
+/* Botão azul com cantos arredondados */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #003f7f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Botão fica mais claro quando passa o mouse */
+button:hover {
+  background-color: #0057a8;
+}
+
+/* Caixinha com a comida e a melhor época */
+#info {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e6f2ff;
+  border-left: 5px solid #003f7f;
+}
+
+/* Espaço entre os textos dentro da caixinha */
+#info p {
+  margin-bottom: 10px;
+}
+
+/* Classe usada pra esconder a caixinha */
+.escondido {
+  display: none;
+}

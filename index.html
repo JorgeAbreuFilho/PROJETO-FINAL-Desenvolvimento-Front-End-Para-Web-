@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Define os acentos e o idioma da página -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Nome que aparece na aba do navegador -->
+  <title>Mochileiro Fácil</title>
+
+  <!-- Liga o arquivo de estilo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho com o nome do site -->
+  <header>
+    <h1>Mochileiro Fácil</h1>
+  </header>
+
+  <!-- Área do meio com o menu de um lado e o conteúdo do outro -->
+  <div class="container">
+
+    <!-- Menu lateral com os destinos -->
+    <nav>
+      <ul>
+        <li><a href="#" onclick="mostrarDestino('inicio')">Início</a></li>
+        <li><a href="#" onclick="mostrarDestino('rio')">Rio de Janeiro</a></li>
+        <li><a href="#" onclick="mostrarDestino('saopaulo')">São Paulo</a></li>
+        <li><a href="#" onclick="mostrarDestino('salvador')">Salvador</a></li>
+        <li><a href="#" onclick="mostrarDestino('foz')">Foz do Iguaçu</a></li>
+      </ul>
+    </nav>
+
+    <!-- Conteúdo principal que muda quando clica no menu -->
+    <main>
+      <!-- Título do destino -->
+      <h2 id="titulo">Bora explorar o Brasil?</h2>
+
+      <!-- Texto com os pontos turísticos -->
+      <p id="pontos">Fala, mochileiro! Escolhe uma cidade no menu ao lado e descobre os pontos turísticos, a comida típica e a melhor época pra ir</p>
+
+      <!-- Botão que mostra ou esconde as outras infos -->
+      <button id="botao" onclick="alternarInfo()">Ver comida e melhor época</button>
+
+      <!-- Caixinha escondida até clicar no botão -->
+      <div id="info" class="escondido">
+        <p id="comida"></p>
+        <p id="epoca"></p>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>Mochileiro Fácil - feito por um mochileiro pra mochileiros</p>
+  </footer>
+
+  <!-- Liga o JavaScript no final da página -->
+  <script src="script.js"></script>
+</body>
+</html>
