@@ -8,7 +8,7 @@
   <!-- Nome que aparece na aba do navegador -->
   <title>Mochileiro Fácil</title>
 
-  <!-- Liga o arquivo de estilo -->
+  <!-- Liga o arquivo de estilo, que está na mesma pasta -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,33 +21,21 @@
   <!-- Área do meio com o menu de um lado e o conteúdo do outro -->
   <div class="container">
 
-    <!-- Menu lateral com os destinos -->
+    <!-- Menu lateral, as cidades ficam dentro da pasta html -->
     <nav>
       <ul>
-        <li><a href="#" onclick="mostrarDestino('inicio')">Início</a></li>
-        <li><a href="#" onclick="mostrarDestino('rio')">Rio de Janeiro</a></li>
-        <li><a href="#" onclick="mostrarDestino('saopaulo')">São Paulo</a></li>
-        <li><a href="#" onclick="mostrarDestino('salvador')">Salvador</a></li>
-        <li><a href="#" onclick="mostrarDestino('foz')">Foz do Iguaçu</a></li>
+        <li><a href="index.html" class="ativo">Início</a></li>
+        <li><a href="html/rio.html">Rio de Janeiro</a></li>
+        <li><a href="html/saopaulo.html">São Paulo</a></li>
+        <li><a href="html/salvador.html">Salvador</a></li>
+        <li><a href="html/foz.html">Foz do Iguaçu</a></li>
       </ul>
     </nav>
 
-    <!-- Conteúdo principal que muda quando clica no menu -->
+    <!-- Conteúdo principal da página inicial -->
     <main>
-      <!-- Título do destino -->
-      <h2 id="titulo">Bora explorar o Brasil?</h2>
-
-      <!-- Texto com os pontos turísticos -->
-      <p id="pontos">Fala, mochileiro! Escolhe uma cidade no menu ao lado e descobre os pontos turísticos, a comida típica e a melhor época pra ir</p>
-
-      <!-- Botão que mostra ou esconde as outras infos -->
-      <button id="botao" onclick="alternarInfo()">Ver comida e melhor época</button>
-
-      <!-- Caixinha escondida até clicar no botão -->
-      <div id="info" class="escondido">
-        <p id="comida"></p>
-        <p id="epoca"></p>
-      </div>
+      <h2>Bora explorar o Brasil?</h2>
+      <p>Fala, mochileiro! Escolhe uma cidade no menu ao lado e descobre os pontos turísticos, a comida típica e a melhor época pra ir</p>
     </main>
 
   </div>
@@ -57,7 +45,5 @@
     <p>Mochileiro Fácil - feito por um mochileiro pra mochileiros</p>
   </footer>
 
-  <!-- Liga o JavaScript no final da página -->
-  <script src="script.js"></script>
 </body>
 </html>
